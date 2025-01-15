@@ -79,7 +79,13 @@ $table_prefix = 'poc_';
  *
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
+
+// Active la journalisation des erreurs
+define( 'WP_DEBUG_LOG', true );
+
+// Désactive l'affichage des erreurs à l'écran (optionnel mais recommandé en production)
+define( 'WP_DEBUG_DISPLAY', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
