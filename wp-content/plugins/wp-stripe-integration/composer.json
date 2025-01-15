@@ -1,0 +1,14 @@
+{
+    "name": "votre-nom/wp-stripe-integration",
+    "description": "Plugin WordPress pour l'intégration de Stripe",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "stripe/stripe-php": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "StripeIntegration\\": "src/"
+        }
+    }
+}
