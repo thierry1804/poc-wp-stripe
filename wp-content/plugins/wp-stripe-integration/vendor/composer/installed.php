@@ -3,7 +3,7 @@
         'name' => 'votre-nom/wp-stripe-integration',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'b4504b3a6b18858cab2dea446f599804338bc954',
+        'reference' => 'eafb5169ef877796de387b1eac82ace5de06d9a5',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'votre-nom/wp-stripe-integration' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'b4504b3a6b18858cab2dea446f599804338bc954',
+            'reference' => 'eafb5169ef877796de387b1eac82ace5de06d9a5',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

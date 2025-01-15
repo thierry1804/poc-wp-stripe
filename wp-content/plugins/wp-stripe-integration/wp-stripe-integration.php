@@ -62,6 +62,38 @@ class WPStripeIntegrationPlugin {
     public function deactivate() {
         // Actions lors de la désactivation du plugin
     }
+
+    public function enqueue_admin_scripts($hook) {
+        // Vérifier si nous sommes sur une page de notre plugin
+        if (strpos($hook, 'wp-stripe-integration') === false) {
+            return;
+        }
+
+        // Enregistrer Chart.js
+        wp_enqueue_script(
+            'chartjs',
+            'https://cdn.jsdelivr.net/npm/chart.js',
+            [],
+            '4.4.1',
+            true
+        );
+
+        // Enregistrer notre script personnalisé
+        wp_enqueue_script(
+            'wp-stripe-integration-admin',
+            plugins_url('assets/js/admin.js', __FILE__),
+            ['chartjs'],
+            '1.0.0',
+            true
+        );
+
+        wp_enqueue_style(
+            'wp-stripe-integration-admin',
+            plugins_url('assets/css/admin.css', __FILE__),
+            [],
+            '1.0.0'
+        );
+    }
 }
 
 // Initialisation du plugin
